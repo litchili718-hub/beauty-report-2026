@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>视频号美妆护肤行业报告 | 2026年618活动期</title>
+<style>
+:root{--primary:#1a73e8;--primary-light:#e8f0fe;--accent:#ff6d01;--green:#34a853;--red:#ea4335;--purple:#9c27b0;--teal:#009688;--gray-50:#f8f9fa;--gray-100:#f1f3f5;--gray-200:#e9ecef;--gray-300:#dee2e6;--gray-500:#6c757d;--gray-700:#495057;--gray-900:#212529;--radius:12px;--shadow:0 2px 12px rgba(0,0,0,.08)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--gray-100);color:var(--gray-900);line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:32px 24px}
+.report-header{text-align:center;padding:48px 24px;background:linear-gradient(135deg,#1a73e8 0%,#4285f4 50%,#7bafff 100%);border-radius:var(--radius);color:#fff;margin-bottom:32px;box-shadow:0 4px 24px rgba(26,115,232,.25)}
+.report-header h1{font-size:30px;font-weight:700;letter-spacing:1px;margin-bottom:8px}
+.report-header .subtitle{font-size:16px;opacity:.9}
+.report-header .meta{font-size:13px;opacity:.65;margin-top:16px}
+.section{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:32px;margin-bottom:24px}
+.section-title{font-size:22px;font-weight:700;color:var(--primary);margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.section-title::before{content:'';display:inline-block;width:4px;height:24px;background:var(--primary);border-radius:2px}
+.section-desc{font-size:14px;color:var(--gray-500);margin-bottom:24px;padding-left:14px}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:24px}
+.kpi-card{background:var(--gray-50);border-radius:10px;padding:18px;border-left:4px solid var(--primary);transition:transform .2s}
+.kpi-card:hover{transform:translateY(-2px)}
+.kpi-card.highlight{border-left-color:var(--accent);background:#fff8f0}
+.kpi-card.green{border-left-color:var(--green)}
+.kpi-card.purple{border-left-color:var(--purple)}
+.kpi-label{font-size:13px;color:var(--gray-500);margin-bottom:4px}
+.kpi-value{font-size:26px;font-weight:700;color:var(--gray-900)}
+.kpi-change{font-size:13px;margin-top:4px}
+.kpi-change.up{color:var(--green)}.kpi-change.down{color:var(--red)}
+.kpi-note{font-size:12px;color:var(--gray-500);margin-top:4px}
+.data-table{width:100%;border-collapse:collapse;font-size:13px;margin:16px 0}
+.data-table th{background:var(--primary-light);color:var(--primary);padding:10px 14px;text-align:left;font-weight:600;border-bottom:2px solid var(--primary);white-space:nowrap}
+.data-table td{padding:8px 14px;border-bottom:1px solid var(--gray-200)}
+.data-table tr:hover td{background:var(--gray-50)}
+.data-table .num{text-align:right;font-variant-numeric:tabular-nums}
+.data-table.shop-top10 td,.data-table.shop-top10 th{padding:8px 8px}
+.data-table.shop-top10 .ct-type{white-space:nowrap}
+.data-table.shop-top10 td:nth-child(3){white-space:nowrap}
+.data-table.shop-top10 .num{white-space:nowrap}
+.chart-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:16px 0}
+.chart-box{background:var(--gray-50);border-radius:10px;padding:20px}
+.chart-title{font-size:15px;font-weight:600;color:var(--gray-700);margin-bottom:12px;text-align:center}
+.pie-container{display:flex;align-items:center;gap:20px}
+.pie-svg{width:160px;height:160px;flex-shrink:0}
+.pie-legend{font-size:13px}
+.pie-legend-item{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.pie-legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.bar-chart{display:flex;flex-direction:column;gap:10px}
+.bar-item{display:flex;align-items:center;gap:12px}
+.bar-label{width:110px;font-size:13px;text-align:right;color:var(--gray-700);flex-shrink:0}
+.bar-track{flex:1;height:28px;background:var(--gray-200);border-radius:6px;overflow:hidden}
+.bar-fill{height:100%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-size:12px;font-weight:600;transition:width 1s}
+.insight-box{background:linear-gradient(135deg,#e8f0fe 0%,#f0f4ff 100%);border-radius:10px;padding:20px;margin-top:20px;border-left:4px solid var(--primary)}
+.insight-box h4{color:var(--primary);font-size:15px;margin-bottom:8px}
+.insight-box p{font-size:14px;color:var(--gray-700);line-height:1.7}
+.insight-box ul{padding-left:20px;margin-top:8px}
+.insight-box li{font-size:14px;color:var(--gray-700);line-height:1.8}
+.insight-box.accent{background:linear-gradient(135deg,#fff8e1 0%,#fff3e0 100%);border-left-color:var(--accent)}
+.insight-box.accent h4{color:var(--accent)}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;justify-content:center}
+.tag{padding:6px 14px;border-radius:20px;font-size:12px;font-weight:500}
+.tag.lg{font-size:15px;padding:8px 18px;font-weight:700}
+.tag.md{font-size:13px;padding:7px 16px}
+.sub-title{font-size:16px;font-weight:600;color:var(--gray-700);margin:24px 0 16px}
+.data-note{font-size:12px;color:var(--gray-500);margin-top:16px;padding:12px;background:var(--gray-50);border-radius:8px;line-height:1.6}
+.report-footer{text-align:center;padding:24px;color:var(--gray-500);font-size:13px}
+.trend-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:12px 0}
+.trend-cell{text-align:center;padding:10px 4px;border-radius:8px;font-size:12px}
+.trend-cell .month{color:var(--gray-500);font-size:11px;margin-bottom:4px}
+.trend-cell .val{font-weight:700;font-size:16px;color:var(--gray-900)}
+.trend-cell .change{font-size:11px;margin-top:2px}
+.trend-cell.active{background:var(--primary-light)}
+.dual-line-chart{position:relative;height:300px;margin:12px 0}
+.dual-line-chart canvas{width:100%!important;height:100%!important}
+.kpi-card.teal{border-left-color:var(--teal)}
+.ratio-bar{display:flex;height:8px;border-radius:4px;overflow:hidden;margin:6px 0 2px}
+.ratio-bar div{transition:width .8s}
+.ratio-label{font-size:11px;color:var(--gray-500)}
+/* === Visual Section 1 === */
+.kpi-card-v2{background:var(--gray-50);border-radius:14px;padding:20px 22px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.kpi-card-v2:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.kpi-card-v2 .kpi-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:10px}
+.kpi-card-v2 .kpi-value{font-size:28px;font-weight:800;letter-spacing:-0.5px}
+.kpi-card-v2 .sparkline{position:absolute;right:16px;bottom:16px;opacity:.35}
+.kpi-card-v2 .kpi-ring{position:absolute;right:18px;top:18px;width:48px;height:48px}
+.month-card{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:14px 16px;text-align:center;transition:all .2s;cursor:default;min-width:0}
+.month-card:hover{border-color:var(--primary);box-shadow:0 2px 12px rgba(26,115,232,.12);transform:translateY(-2px)}
+.month-card.peak{border-color:var(--accent);background:linear-gradient(135deg,#fff8f0 0%,#fff3e0 100%)}
+.month-card .mc-month{font-size:12px;color:var(--gray-500);margin-bottom:6px;font-weight:500}
+.month-card .mc-all{font-size:20px;font-weight:800;color:var(--primary);line-height:1.2}
+.month-card .mc-beauty{font-size:14px;font-weight:700;color:var(--accent);margin-top:2px}
+.month-card .mc-ratio{margin-top:6px}
+.month-card .mc-ratio-bar{height:4px;background:var(--gray-200);border-radius:2px;overflow:hidden;margin-top:3px}
+.month-card .mc-ratio-fill{height:100%;border-radius:2px;transition:width .8s}
+.month-card .mc-mom{font-size:11px;margin-top:4px}
+.timeline-row{display:flex;gap:4px;align-items:center;padding:10px 0;border-bottom:1px solid var(--gray-200)}
+.timeline-row:last-child{border-bottom:none}
+.timeline-row .tl-month{width:60px;font-size:13px;font-weight:600;color:var(--gray-700);flex-shrink:0}
+.timeline-row .tl-bar-group{flex:1;display:flex;gap:6px;align-items:center}
+.timeline-row .tl-bar{height:22px;border-radius:4px;display:flex;align-items:center;padding:0 8px;font-size:11px;font-weight:600;color:#fff;transition:width .8s;min-width:30px}
+.timeline-row .tl-val{font-size:12px;font-weight:600;min-width:48px;text-align:right;color:var(--gray-700)}
+.timeline-row .tl-change{font-size:11px;min-width:52px;text-align:right}
+.metric-timeline{margin:16px 0}
+.metric-timeline .mt-title{font-size:13px;font-weight:600;color:var(--gray-700);margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.metric-timeline .mt-title .mt-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+@media(max-width:768px){.chart-row{grid-template-columns:1fr}.kpi-grid{grid-template-columns:1fr 1fr}.trend-grid{grid-template-columns:repeat(3,1fr)}.report-header h1{font-size:22px}.month-cards-grid{grid-template-columns:repeat(3,1fr)!important}}
+<style>
+.drill-group:hover .drillable{stroke:#f59e0b;stroke-width:3.2;}
+.drill-group:hover .drill-ring{stroke-width:2.5;opacity:1;}
+.drill-group .drillable{transition:stroke-width .15s;}
+.drill-group .drill-ring{transition:stroke-width .15s,opacity .15s;}
+
+  /* === 已下钻 vs 未下钻 视觉区分 === */
+  .non-drill-bubble{filter:grayscale(65%);opacity:0.45;transition:filter .2s,opacity .2s}
+  .non-drill-bubble:hover{filter:grayscale(0%);opacity:1}
+  .non-drill-label{opacity:0.35;transition:opacity .2s}
+  .non-drill-label:hover{opacity:0.7}
+
+  /* === 7 个下钻品类集合 卡片区 === */
+  .drill-collection{margin:18px 0 8px 0;padding:18px 22px 20px 22px;background:linear-gradient(135deg,#fff8e1 0%,#fffbf0 100%);border:1.5px solid #f59e0b;border-radius:10px;box-shadow:0 2px 8px rgba(245,158,11,0.08)}
+  .drill-collection-title{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:#92400e;margin-bottom:14px}
+  .drill-collection-title .badge{background:#f59e0b;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;letter-spacing:0.5px}
+  .drill-collection-desc{font-size:12px;color:#78716c;margin-left:auto}
+  .drill-collection-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+  .drill-card{background:#fff;border:1.5px solid #e7e5e4;border-radius:8px;padding:12px 10px;cursor:pointer;transition:all .18s;text-align:center;position:relative;overflow:hidden}
+  .drill-card:hover{border-color:#f59e0b;transform:translateY(-2px);box-shadow:0 6px 16px rgba(245,158,11,0.18);background:#fffbeb}
+  .drill-card::after{content:"👇";position:absolute;top:6px;right:8px;font-size:10px;opacity:0;transition:opacity .18s}
+  .drill-card:hover::after{opacity:1}
+  .drill-card-icon{width:34px;height:34px;border-radius:50%;margin:0 auto 8px auto;display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:700;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+  .drill-card-name{font-size:13px;font-weight:700;color:#1c1917;margin-bottom:5px;line-height:1.3}
+  .drill-card-gmv{font-size:14px;font-weight:800;color:#0c4a6e;font-family:'SF Mono','Monaco',monospace;letter-spacing:-0.3px}
+  .drill-card-gmv small{font-size:9px;font-weight:500;color:#64748b;margin-left:1px}
+  .drill-card-gmv.pos{color:#dc2626}
+  .drill-card-gmv.neg{color:#16a34a}
+
+  .drill-card-live{font-size:10px;color:#78716c;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:3px}
+  .drill-card-live::before{content:"📡";font-size:9px}
+
+/* === 二级类目TOP10品牌榜（复用 2026-06 6月月榜_二级类目TOP10品牌.html 原版，作用域隔离） === */
+@media (max-width: 900px) { .yt-top10 .cat-grid { grid-template-columns: 1fr; } }
+.yt-top10 .cat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }.yt-top10 .cat-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }.yt-top10 .cat-header { display: flex; justify-content: space-between; align-items: center; padding: 16px 22px; background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%); color: white; }.yt-top10 .cat-tag { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; }.yt-top10 .cat-meta { font-size: 12px; opacity: 0.85; background: rgba(255,255,255,0.18); padding: 4px 10px; border-radius: 6px; }.yt-top10 .brand-table { width: 100%; border-collapse: collapse; }.yt-top10 .brand-table thead th { background: #f1f7ff; color: #1a73e8; font-size: 12px; font-weight: 600; padding: 12px 14px; text-align: left; border-bottom: 2px solid #e0ecff; }.yt-top10 .brand-table thead th.num-th { text-align: center; }.yt-top10 .brand-table thead th.rank-th { text-align: center; width: 70px; }.yt-top10 .brand-table tbody td { padding: 14px; border-bottom: 1px solid #f1f3f5; font-size: 14px; }.yt-top10 .brand-table tbody tr:last-child td { border-bottom: none; }.yt-top10 .brand-table tbody tr:hover { background: #f1f7ff; }.yt-top10 .rank-cell { text-align: center; font-weight: 700; color: #1a73e8; font-size: 18px; }.yt-top10 .brand-cell { font-weight: 600; color: #1a1a1a; }.yt-top10 .brand-main { line-height: 1.4; }.yt-top10 .num-cell { text-align: center; color: #444; font-variant-numeric: tabular-nums; }.yt-top10 .bar-wrap { position: relative; width: 88px; height: 22px; background: #f1f3f5; border-radius: 11px; margin: 0 auto; overflow: hidden; }.yt-top10 .bar { height: 100%; border-radius: 11px; transition: width 0.6s ease; }.yt-top10 .bar.self { background: linear-gradient(90deg, #1a73e8 0%, #4285f4 100%); }.yt-top10 .bar.dist { background: linear-gradient(90deg, #ff6d01 0%, #ff9248 100%); }.yt-top10 .bar-label { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 11px; font-weight: 700; color: #1a1a1a; z-index: 2; }
+
+</style>
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<div class="report-header">
+  <h1>微信小店 · 美妆护肤品类行业数据趋势与洞察</h1>
+  <div class="meta">统计周期：2026年618活动期（2026/05/15 - 2026/06/18）</div>
+  <div class="subtitle" style="margin-top:12px;font-size:14px;opacity:0.85">腾讯营销商品消费业务部 · 经营策略中心</div>
+</div>
+
+<!-- ===== 一、大盘概览 ===== -->
+<div class="section">
+<div class="section-title">一、美妆护肤品类直播整体概览</div>
+<div class="section-desc">2026年618活动期 GMV 增长指数（活动期 5月15日 - 6月18日）</div>
+
+<div style="text-align:center;margin:0 auto 24px auto">
+  <img src="_assets/clipboard-2026-07-14T14-26-00-591Z-96d75db4.png" alt="2025→2026 618 GMV 增长指数" style="max-width:100%;height:auto;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,.08)"/>
+</div>
+</div>
+
+<!-- ===== 二、美妆护肤细分品类趋势 ===== -->
+<div class="section">
+<div class="section-title">二、美妆护肤细分品类趋势</div>
+<div class="section-desc">面部护肤与香水彩妆两大细分品类趋势（618活动期：2026年5月15日 – 6月18日）</div>
+
+<!-- 3.1 双品类核心指标月度对比 -->
+<h3 class="sub-title">2.1 面部护肤 vs 香水彩妆 · 核心指标对比</h3>
+<div class="kpi-grid" style="grid-template-columns:1fr 1fr;gap:20px">
+  <!-- 面部护肤 卡片 -->
+  <div class="kpi-card highlight" style="padding:22px 24px">
+    <div class="kpi-label" style="font-size:14px;font-weight:600;color:var(--primary)">面部护肤 · 品类大盘</div>
+    
+    <div style="margin-top:12px">
+      <svg viewBox="0 0 560 110" style="width:100%;height:auto" font-family="inherit">
+        <defs>
+          <linearGradient id="gBlue2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a73e8" stop-opacity="0.2"/><stop offset="100%" stop-color="#1a73e8" stop-opacity="0.01"/></linearGradient>
+        </defs>
+        <polygon points="30,66.7 135,61.5 240,24.0 345,43.8 450,29.6 555,32.9 555,80 30,80" fill="url(#gBlue2)"/>
+        <polyline points="30,66.7 135,61.5 240,24.0 345,43.8 450,29.6 555,32.9" fill="none" stroke="#1a73e8" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="30"  cy="66.7" r="3" fill="#1a73e8" class="non-drill-bubble"/><circle cx="135" cy="61.5" r="3" fill="#1a73e8" class="non-drill-bubble"/>
+        <circle cx="240" cy="24.0" r="3" fill="#1a73e8" class="non-drill-bubble"/><circle cx="345" cy="43.8" r="3" fill="#1a73e8" class="non-drill-bubble"/>
+        <circle cx="450" cy="29.6" r="3" fill="#1a73e8" class="non-drill-bubble"/><circle cx="555" cy="32.9" r="3" fill="#1a73e8" class="non-drill-bubble"/>
+<g font-size="10" fill="#6c757d" text-anchor="middle">
+          <text x="25"  y="96">1月</text><text x="125" y="96">2月</text>
+          <text x="225" y="96">3月</text><text x="325" y="96">4月</text><text x="425" y="96">5月</text><text x="525" y="96">6月</text>
+        </g>
+      </svg>
+    </div>
+    <div style="border-top:1px solid var(--gray-200);margin-top:14px;padding-top:12px;display:flex;align-items:center;gap:16px">
+      <div>
+        <div style="font-size:11px;color:var(--gray-500)">直播销售额占比</div>
+        <div style="font-size:22px;font-weight:800;color:var(--primary)">73.2%</div>
+      </div>
+      <div style="flex:1">
+        <div style="height:6px;background:var(--gray-200);border-radius:3px;overflow:hidden">
+          <div style="width:73.2%;background:linear-gradient(90deg,#1a73e8,#5c9aff);border-radius:3px;height:100%"></div>
+        </div>
+        <div style="font-size:10px;color:var(--gray-500);margin-top:3px;font-weight:600">直播渗透高</div>
+      </div>
+    </div>
+  </div>
+  <!-- 香水彩妆 卡片 -->
+  <div class="kpi-card purple" style="padding:22px 24px">
+    <div class="kpi-label" style="font-size:14px;font-weight:600;color:var(--purple)">香水彩妆 · 品类大盘</div>
+    
+    <div style="margin-top:12px">
+      <svg viewBox="0 0 560 110" style="width:100%;height:auto" font-family="inherit">
+        <defs>
+          <linearGradient id="gPurple2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#9c27b0" stop-opacity="0.18"/><stop offset="100%" stop-color="#9c27b0" stop-opacity="0.01"/></linearGradient>
+        </defs>
+        <polygon points="25,63.0 125,46.9 225,40.1 325,29.0 425,31.5 525,23.9 525,80 25,80" fill="url(#gPurple2)"/>
+        <polyline points="25,63.0 125,46.9 225,40.1 325,29.0 425,31.5 525,23.9" fill="none" stroke="#9c27b0" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="25"  cy="63.0" r="3" fill="#9c27b0" class="non-drill-bubble"/><circle cx="125" cy="46.9" r="3" fill="#9c27b0" class="non-drill-bubble"/>
+        <circle cx="225" cy="40.1" r="3" fill="#9c27b0" class="non-drill-bubble"/><circle cx="325" cy="29.0" r="3" fill="#9c27b0" class="non-drill-bubble"/>
+        <circle cx="425" cy="31.5" r="3" fill="#9c27b0" class="non-drill-bubble"/><circle cx="525" cy="23.9" r="3" fill="#9c27b0" class="non-drill-bubble"/>
+<g font-size="10" fill="#6c757d" text-anchor="middle">
+          <text x="25"  y="96">1月</text><text x="125" y="96">2月</text>
+          <text x="225" y="96">3月</text><text x="325" y="96">4月</text><text x="425" y="96">5月</text><text x="525" y="96">6月</text>
+        </g>
+      </svg>
+    </div>
+    <div style="border-top:1px solid var(--gray-200);margin-top:14px;padding-top:12px;display:flex;align-items:center;gap:16px">
+      <div>
+        <div style="font-size:11px;color:var(--gray-500)">直播销售额占比</div>
+        <div style="font-size:22px;font-weight:800;color:var(--purple)">60.7%</div>
+      </div>
+      <div style="flex:1">
+        <div style="height:6px;background:var(--gray-200);border-radius:3px;overflow:hidden">
+          <div style="width:60.7%;background:linear-gradient(90deg,#9c27b0,#ba68c8);border-radius:3px;height:100%"></div>
+        </div>
+        <div style="font-size:10px;color:var(--gray-500);margin-top:3px;font-weight:600">直播渗透中</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3.2 面部护肤深度分析 -->
+<h3 class="sub-title">2.2 面部护肤细分品类分析</h3>
+
+<!-- 面部护肤 子品类散点图（规模·增速·销量） -->
+<div class="chart-box" style="padding:24px;margin-bottom:16px">
+  <div class="chart-title" style="margin-bottom:4px">2.1 面部护肤 · 子品类规模-增速矩阵</div>
+<svg viewBox="0 0 1180 520" font-family="inherit">
+<defs>
+<linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#34a853" stop-opacity="0.78"/>
+  <stop offset="100%" stop-color="#34a853" stop-opacity="0.38"/>
+</linearGradient>
+<linearGradient id="fbb" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#1a73e8" stop-opacity="0.7"/>
+  <stop offset="100%" stop-color="#1a73e8" stop-opacity="0.3"/>
+</linearGradient>
+<linearGradient id="fbr" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#ff6d01" stop-opacity="0.85"/>
+  <stop offset="100%" stop-color="#ff6d01" stop-opacity="0.4"/>
+</linearGradient>
+</defs>
+<g stroke="#e9ecef" stroke-width="1">
+<line x1="130" y1="130" x2="130" y2="400"/>
+<line x1="130" y1="400" x2="1130" y2="400"/>
+</g>
+<g stroke="#eef1f4" stroke-width="1">
+<line x1="130" y1="378.7" x2="1130" y2="378.7" stroke-dasharray="4,4"/>
+<line x1="130" y1="343.2" x2="1130" y2="343.2" stroke-dasharray="4,4"/>
+<line x1="130" y1="307.6" x2="1130" y2="307.6"/>
+<line x1="130" y1="272.1" x2="1130" y2="272.1" stroke-dasharray="4,4"/>
+<line x1="130" y1="236.6" x2="1130" y2="236.6" stroke-dasharray="4,4"/>
+<line x1="130" y1="201.1" x2="1130" y2="201.1" stroke-dasharray="4,4"/>
+<line x1="130" y1="165.5" x2="1130" y2="165.5" stroke-dasharray="4,4"/>
+<line x1="130" y1="130.0" x2="1130" y2="130.0" stroke-dasharray="4,4"/>
+</g>
+<line x1="130" y1="307.6" x2="1130" y2="307.6" stroke="#adb5bd" stroke-width="1.5" stroke-dasharray="6,3"/>
+<text x="1134" y="304.6" font-size="9" fill="#adb5bd" font-style="italic">0%线</text>
+<g fill="#5a6872" font-size="10" text-anchor="end">
+<text x="124" y="381.7">-50%</text>
+<text x="124" y="346.2">-25%</text>
+<text x="124" y="310.6">0%</text>
+<text x="124" y="275.1">+25%</text>
+<text x="124" y="239.6">+50%</text>
+<text x="124" y="204.1">+75%</text>
+<text x="124" y="168.5">+100%</text>
+<text x="124" y="133.0">+125%</text>
+</g>
+<g fill="#5a6872" font-size="9" text-anchor="middle">
+</g>
+<g>
+<circle cx="1130.0" cy="279.9" r="40.0" fill="url(#fbr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="1130.0" y="277.9" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">面部精华/精油</text>
+<text x="1130.0" y="290.9" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+19%</text>
+<circle cx="1058.6" cy="294.9" r="35.8" fill="url(#fbr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="1058.6" y="292.9" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">套装/礼盒</text>
+<text x="1058.6" y="305.9" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+9%</text>
+<circle cx="987.1" cy="262.3" r="35.5" fill="url(#fbr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="987.1" y="260.3" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">面膜</text>
+<text x="987.1" y="273.3" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+32%</text>
+<circle cx="915.7" cy="267.6" r="37.8" fill="url(#fbr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="915.7" y="265.6" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">乳液/面霜</text>
+<text x="915.7" y="278.6" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+28%</text>
+<circle cx="844.3" cy="302.6" r="30.5" fill="url(#fbr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="844.3" y="300.6" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">眼霜/眼部精华</text>
+<text x="844.3" y="313.6" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+4%</text>
+<circle cx="772.9" cy="330.5" r="31.3" fill="url(#fbb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="772.9" y="328.5" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">防晒</text>
+<text x="772.9" y="341.5" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-16%</text>
+<circle cx="701.4" cy="265.4" r="29.1" fill="url(#fbr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="701.4" y="263.4" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">爽肤水/化妆水</text>
+<text x="701.4" y="276.4" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+30%</text>
+<circle cx="630.0" cy="258.3" r="30.7" fill="url(#fbr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="630.0" y="256.3" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">洁面</text>
+<text x="630.0" y="269.3" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+35%</text>
+<circle cx="558.6" cy="189.5" r="24.0" fill="url(#fbg)" stroke="#34a853" stroke-width="1.4" opacity="0.8"/>
+<text x="558.6" y="187.5" text-anchor="middle" font-size="11" font-weight="700" fill="#1e7e34">眼膜</text>
+<text x="558.6" y="200.5" text-anchor="middle" font-size="10" font-weight="600" fill="#1e7e34">+83%</text>
+<circle cx="487.1" cy="391.6" r="23.3" fill="url(#fbb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="487.1" y="389.6" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">喷雾</text>
+<text x="487.1" y="402.6" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-59%</text>
+<circle cx="415.7" cy="277.5" r="23.2" fill="url(#fbr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="415.7" y="275.5" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">卸妆</text>
+<text x="415.7" y="288.5" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+21%</text>
+<circle cx="344.3" cy="253.3" r="21.6" fill="url(#fbr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="344.3" y="251.3" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">其它面部护肤</text>
+<text x="344.3" y="264.3" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+38%</text>
+<circle cx="272.9" cy="328.3" r="22.6" fill="url(#fbb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="272.9" y="326.3" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">润唇膏</text>
+<text x="272.9" y="339.3" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-15%</text>
+<circle cx="201.4" cy="339.1" r="20.7" fill="url(#fbb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="201.4" y="337.1" text-anchor="middle" font-size="9" font-weight="700" fill="#0d47a1">唇膜/唇部精华/唇部磨砂</text>
+<text x="201.4" y="350.1" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-22%</text>
+<circle cx="130.0" cy="380.3" r="18.0" fill="url(#fbb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="130.0" y="378.3" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">T区护理</text>
+<text x="130.0" y="391.3" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-51%</text>
+</g>
+<text x="630.0" y="512" text-anchor="middle" font-size="12" fill="#495057" font-weight="600">销售规模（按排名）</text>
+<text x="20" y="265.0" text-anchor="middle" font-size="12" fill="#495057" font-weight="600" transform="rotate(-90,20,265.0)">环比增速（%）</text>
+<g transform="translate(140,476)">
+<rect x="-6" y="-12" width="240" height="22" rx="4" fill="#f8f9fa" stroke="#e9ecef" stroke-width="0.5"/>
+<circle cx="0" cy="-1" r="5" fill="#1a73e8" opacity="0.85" stroke="#1a73e8" stroke-width="1"/>
+<text x="8" y="2" font-size="10" fill="#495057" font-weight="500">跌</text>
+<circle cx="50" cy="-1" r="5" fill="#ff6d01" opacity="0.85" stroke="#ff6d01" stroke-width="1"/>
+<text x="58" y="2" font-size="10" fill="#495057" font-weight="500">涨一般 &lt;50%</text>
+<circle cx="155" cy="-1" r="5" fill="#34a853" opacity="0.85" stroke="#34a853" stroke-width="1"/>
+<text x="163" y="2" font-size="10" fill="#495057" font-weight="500">涨很好 ≥50%</text>
+</g>
+</svg>
+</div>
+
+
+<!-- 面部护肤 细分品类 属性值词云：眼膜 / 眼霜·眼部精华 / 面膜 / 面部精华·精油 -->
+<!-- 数据源：友望 SellPointList · 统计窗口 2026/5/15–2026/6/18（618活动期）· 维度：成分 / 产品功能 / 痛点 -->
+<div class="chart-box" style="padding:24px;margin-bottom:16px">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px">
+    <div class="chart-title" style="margin-bottom:0">面部护肤 细分品类 · 属性值词云</div>
+    <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#555">
+      <span>选择品类：</span>
+      <select id="faceWcSelect" style="padding:7px 30px 7px 12px;font-size:13px;font-family:inherit;border:1px solid #d0d7de;border-radius:8px;background:#fff;color:#1a1a1a;cursor:pointer;outline:none;box-shadow:0 1px 2px rgba(0,0,0,0.04)" onchange="document.querySelectorAll('.face-wc-panel').forEach(p=>p.style.display=(p.dataset.cat===this.value?'block':'none'))">
+      <option value="眼膜">眼膜</option>
+      <option value="眼霜/眼部精华">眼霜/眼部精华</option>
+      <option value="面膜">面膜</option>
+      <option value="面部精华/精油">面部精华/精油</option>
+      </select>
+    </div>
+  </div>
+  <div class="face-wc-panel" data-cat="眼膜" >
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;text-align:center">
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--primary);margin-bottom:12px;border-bottom:2px solid var(--primary);padding-bottom:6px;display:inline-block">成分</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp0" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#1a73e8" stop-opacity="0.08"/><stop offset="100%" stop-color="#1a73e8" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp0)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#1a73e8" opacity="0.92">黄金</text>
+<text x="150" y="100" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#1a73e8" opacity="0.85">水凝胶</text>
+<text x="205" y="122" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#1a73e8" opacity="0.82">水晶</text>
+<text x="88" y="112" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#4a90d9" opacity="0.78">翡翠</text>
+<text x="95" y="172" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#4a90d9" opacity="0.78">鎏金</text>
+<text x="208" y="170" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#5c9aff" opacity="0.73">生物纤维</text>
+<text x="198" y="78" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#5c9aff" opacity="0.66">黄金蜂巢</text>
+<text x="98" y="72" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#7ab3ff" opacity="0.65">冻干</text>
+<text x="238" y="138" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#7ab3ff" opacity="0.6">冰晶</text>
+<text x="232" y="200" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#7ab3ff" opacity="0.58">黄金蜂窝</text>
+<text x="175" y="215" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#7ab3ff" opacity="0.58">人皮</text>
+</svg>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--red);margin-bottom:12px;border-bottom:2px solid var(--red);padding-bottom:6px;display:inline-block">卖点</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e74c3c" stop-opacity="0.08"/><stop offset="100%" stop-color="#e74c3c" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp1)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="800" fill="#e74c3c" opacity="0.92">紧致</text>
+<text x="150" y="102" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#e74c3c" opacity="0.84">抗皱</text>
+<text x="210" y="120" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ff6d01" opacity="0.74">保湿</text>
+<text x="82" y="118" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#ff6d01" opacity="0.72">淡纹</text>
+<text x="150" y="182" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#f39c12" opacity="0.7">补水</text>
+<text x="208" y="168" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#f39c12" opacity="0.66">抚纹</text>
+<text x="88" y="172" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#f39c12" opacity="0.64">淡化细纹</text>
+<text x="205" y="82" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#f39c12" opacity="0.64">提拉</text>
+<text x="90" y="80" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#e67e22" opacity="0.62">护肤</text>
+<text x="240" y="142" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#e67e22" opacity="0.6">凝时</text>
+<text x="55" y="90" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e67e22" opacity="0.58">淡化眼纹</text>
+<text x="58" y="198" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e67e22" opacity="0.56">改善</text>
+<text x="228" y="198" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#f5b041" opacity="0.55">沁润</text>
+<text x="168" y="218" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="400" fill="#f5b041" opacity="0.52">提拉紧致</text>
+<text x="170" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f5b041" opacity="0.5">滋润</text>
+<text x="252" y="92" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.48">水润</text>
+<text x="48" y="142" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.48">淡化黑眼圈</text>
+<text x="108" y="238" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.46">修护</text>
+<text x="200" y="238" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.46">眼部护理</text>
+<text x="62" y="225" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#fad7a0" opacity="0.44">舒缓</text>
+</svg>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--purple);margin-bottom:12px;border-bottom:2px solid var(--purple);padding-bottom:6px;display:inline-block">肌肤问题</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#9c27b0" stop-opacity="0.08"/><stop offset="100%" stop-color="#9c27b0" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp2)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#9c27b0" opacity="0.92">冻干</text>
+<text x="150" y="100" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#9c27b0" opacity="0.84">加强版</text>
+<text x="210" y="125" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#ab47bc" opacity="0.82">超低分子</text>
+<text x="85" y="110" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="#ab47bc" opacity="0.76">透皮</text>
+<text x="208" y="170" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ba68c8" opacity="0.72">导热</text>
+<text x="88" y="172" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ba68c8" opacity="0.7">4D</text>
+<text x="150" y="180" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#ba68c8" opacity="0.68">弹力</text>
+<text x="205" y="80" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#ce93d8" opacity="0.62">浓缩</text>
+<text x="92" y="78" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#ce93d8" opacity="0.62">嘭弹</text>
+<text x="242" y="142" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#ce93d8" opacity="0.58">持久</text>
+<text x="55" y="142" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#ce93d8" opacity="0.58">细腻</text>
+<text x="200" y="215" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e1bee7" opacity="0.56">微压导热</text>
+<text x="95" y="218" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e1bee7" opacity="0.54">3D</text>
+<text x="248" y="92" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.5">9D</text>
+<text x="50" y="88" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.5">微压</text>
+<text x="242" y="200" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.48">强吸收</text>
+<text x="55" y="202" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.48">纳米</text>
+<text x="150" y="242" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="400" fill="#f3e5f5" opacity="0.46">紧致</text>
+<text x="112" y="48" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.44">超分子</text>
+</svg>
+    </div>
+  </div>
+  </div>
+  <div class="face-wc-panel" data-cat="眼霜/眼部精华" style="display:none">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;text-align:center">
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--primary);margin-bottom:12px;border-bottom:2px solid var(--primary);padding-bottom:6px;display:inline-block">成分</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp3" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#1a73e8" stop-opacity="0.08"/><stop offset="100%" stop-color="#1a73e8" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp3)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#1a73e8" opacity="0.92">鎏金</text>
+<text x="150" y="100" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#1a73e8" opacity="0.85">黄金</text>
+<text x="205" y="122" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#1a73e8" opacity="0.82">金钻</text>
+<text x="88" y="112" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#4a90d9" opacity="0.78">丝绒</text>
+<text x="95" y="172" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#4a90d9" opacity="0.78">铂金</text>
+<text x="208" y="170" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#5c9aff" opacity="0.73">进口原料</text>
+<text x="198" y="78" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#5c9aff" opacity="0.66">天然</text>
+<text x="98" y="72" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#7ab3ff" opacity="0.65">光感丝绒</text>
+<text x="238" y="138" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#7ab3ff" opacity="0.6">白金</text>
+<text x="232" y="200" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#7ab3ff" opacity="0.58">红木籽</text>
+<text x="175" y="215" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#7ab3ff" opacity="0.58">紫金</text>
+<text x="110" y="218" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#a0c4ff" opacity="0.55">天然植物</text>
+<text x="62" y="200" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#a0c4ff" opacity="0.55">琥珀</text>
+<text x="58" y="148" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#a0c4ff" opacity="0.52">奢金</text>
+<text x="60" y="92" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#b3d4ff" opacity="0.48">草绿泥</text>
+<text x="152" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#b3d4ff" opacity="0.48">紫檀</text>
+</svg>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--red);margin-bottom:12px;border-bottom:2px solid var(--red);padding-bottom:6px;display:inline-block">卖点</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp4" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e74c3c" stop-opacity="0.08"/><stop offset="100%" stop-color="#e74c3c" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp4)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="800" fill="#e74c3c" opacity="0.92">抗皱</text>
+<text x="150" y="102" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#e74c3c" opacity="0.84">紧致</text>
+<text x="210" y="120" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ff6d01" opacity="0.74">淡纹</text>
+<text x="82" y="118" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#ff6d01" opacity="0.72">保湿</text>
+<text x="150" y="182" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#f39c12" opacity="0.7">提拉</text>
+<text x="208" y="168" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#f39c12" opacity="0.66">修护</text>
+<text x="88" y="172" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#f39c12" opacity="0.64">淡化细纹</text>
+<text x="205" y="82" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#f39c12" opacity="0.64">抚纹</text>
+<text x="90" y="80" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#e67e22" opacity="0.62">滋润</text>
+<text x="240" y="142" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#e67e22" opacity="0.6">舒缓</text>
+<text x="55" y="90" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e67e22" opacity="0.58">淡化黑眼圈</text>
+<text x="58" y="198" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e67e22" opacity="0.56">淡化眼纹</text>
+<text x="228" y="198" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#f5b041" opacity="0.55">凝时</text>
+<text x="168" y="218" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="400" fill="#f5b041" opacity="0.52">赋活</text>
+<text x="170" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f5b041" opacity="0.5">补水</text>
+<text x="252" y="92" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.48">美白</text>
+<text x="48" y="142" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.48">提亮</text>
+<text x="108" y="238" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.46">嫩颜</text>
+<text x="200" y="238" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.46">紧塑</text>
+<text x="62" y="225" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#fad7a0" opacity="0.44">焕亮</text>
+</svg>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--purple);margin-bottom:12px;border-bottom:2px solid var(--purple);padding-bottom:6px;display:inline-block">肌肤问题</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp5" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#9c27b0" stop-opacity="0.08"/><stop offset="100%" stop-color="#9c27b0" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp5)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#9c27b0" opacity="0.92">温和</text>
+<text x="150" y="100" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#9c27b0" opacity="0.84">细腻</text>
+<text x="210" y="125" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#ab47bc" opacity="0.82">好吸收</text>
+<text x="85" y="110" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="#ab47bc" opacity="0.76">不粘腻</text>
+<text x="208" y="170" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ba68c8" opacity="0.72">电动</text>
+<text x="88" y="172" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ba68c8" opacity="0.7">菁纯</text>
+<text x="150" y="180" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#ba68c8" opacity="0.68">冰感</text>
+<text x="205" y="80" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#ce93d8" opacity="0.62">浓缩</text>
+<text x="92" y="78" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#ce93d8" opacity="0.62">清爽</text>
+<text x="242" y="142" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#ce93d8" opacity="0.58">速充</text>
+<text x="55" y="142" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#ce93d8" opacity="0.58">轻盈</text>
+<text x="200" y="215" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e1bee7" opacity="0.56">便捷</text>
+<text x="95" y="218" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e1bee7" opacity="0.54">超体</text>
+<text x="248" y="92" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.5">三秒吸收</text>
+<text x="50" y="88" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.5">7天淡纹</text>
+<text x="242" y="200" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.48">不油</text>
+<text x="55" y="202" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.48">7天抗皱</text>
+<text x="150" y="242" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="400" fill="#f3e5f5" opacity="0.46">不油腻</text>
+<text x="112" y="48" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.44">第五代</text>
+<text x="192" y="48" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.44">更吸收</text>
+</svg>
+    </div>
+  </div>
+  </div>
+  <div class="face-wc-panel" data-cat="面膜" style="display:none">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;text-align:center">
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--primary);margin-bottom:12px;border-bottom:2px solid var(--primary);padding-bottom:6px;display:inline-block">成分</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp6" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#1a73e8" stop-opacity="0.08"/><stop offset="100%" stop-color="#1a73e8" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp6)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#1a73e8" opacity="0.92">鎏金</text>
+<text x="150" y="100" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#1a73e8" opacity="0.85">铂金</text>
+<text x="205" y="122" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#1a73e8" opacity="0.82">纯珍珠粉</text>
+<text x="88" y="112" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#4a90d9" opacity="0.78">黄金</text>
+<text x="95" y="172" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#4a90d9" opacity="0.78">水晶</text>
+<text x="208" y="170" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#5c9aff" opacity="0.73">人皮</text>
+<text x="198" y="78" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#5c9aff" opacity="0.66">金丝</text>
+<text x="98" y="72" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#7ab3ff" opacity="0.65">蚕丝</text>
+<text x="238" y="138" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#7ab3ff" opacity="0.6">白瓷</text>
+<text x="232" y="200" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#7ab3ff" opacity="0.58">生物纤维</text>
+<text x="175" y="215" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#7ab3ff" opacity="0.58">小冰珠</text>
+<text x="110" y="218" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#a0c4ff" opacity="0.55">天丝</text>
+<text x="62" y="200" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#a0c4ff" opacity="0.55">冰种</text>
+<text x="58" y="148" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#a0c4ff" opacity="0.52">琉璃</text>
+<text x="60" y="92" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#b3d4ff" opacity="0.48">黑晶</text>
+<text x="152" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#b3d4ff" opacity="0.48">真蚕丝</text>
+<text x="258" y="140" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#b3d4ff" opacity="0.46">翡翠</text>
+<text x="128" y="240" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#c6e0ff" opacity="0.44">奶皮子</text>
+<text x="182" y="242" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#c6e0ff" opacity="0.44">进口原料</text>
+<text x="72" y="52" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#c6e0ff" opacity="0.42">蛋白膜</text>
+</svg>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--red);margin-bottom:12px;border-bottom:2px solid var(--red);padding-bottom:6px;display:inline-block">卖点</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp7" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e74c3c" stop-opacity="0.08"/><stop offset="100%" stop-color="#e74c3c" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp7)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="800" fill="#e74c3c" opacity="0.92">保湿</text>
+<text x="150" y="102" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#e74c3c" opacity="0.84">紧致</text>
+<text x="210" y="120" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ff6d01" opacity="0.74">抗皱</text>
+<text x="82" y="118" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#ff6d01" opacity="0.72">补水</text>
+<text x="150" y="182" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#f39c12" opacity="0.7">舒缓</text>
+<text x="208" y="168" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#f39c12" opacity="0.66">修护</text>
+<text x="88" y="172" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#f39c12" opacity="0.64">美白</text>
+<text x="205" y="82" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#f39c12" opacity="0.64">水光</text>
+<text x="90" y="80" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#e67e22" opacity="0.62">祛斑</text>
+<text x="240" y="142" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#e67e22" opacity="0.6">淡纹</text>
+<text x="55" y="90" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e67e22" opacity="0.58">提亮</text>
+<text x="58" y="198" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e67e22" opacity="0.56">淡斑</text>
+<text x="228" y="198" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#f5b041" opacity="0.55">提亮肤色</text>
+<text x="168" y="218" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="400" fill="#f5b041" opacity="0.52">焕亮</text>
+<text x="170" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f5b041" opacity="0.5">清洁</text>
+<text x="252" y="92" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.48">焕颜</text>
+<text x="48" y="142" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.48">提拉</text>
+<text x="108" y="238" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.46">水润</text>
+<text x="200" y="238" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.46">滋润</text>
+<text x="62" y="225" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#fad7a0" opacity="0.44">控油</text>
+</svg>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--purple);margin-bottom:12px;border-bottom:2px solid var(--purple);padding-bottom:6px;display:inline-block">肌肤问题</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp8" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#9c27b0" stop-opacity="0.08"/><stop offset="100%" stop-color="#9c27b0" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp8)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#9c27b0" opacity="0.92">温和</text>
+<text x="150" y="100" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#9c27b0" opacity="0.84">冻干</text>
+<text x="210" y="125" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#ab47bc" opacity="0.82">细腻</text>
+<text x="85" y="110" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="#ab47bc" opacity="0.76">持久</text>
+<text x="208" y="170" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ba68c8" opacity="0.72">服帖</text>
+<text x="88" y="172" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ba68c8" opacity="0.7">强效款</text>
+<text x="150" y="180" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#ba68c8" opacity="0.68">轻薄</text>
+<text x="205" y="80" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#ce93d8" opacity="0.62">4D</text>
+<text x="92" y="78" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#ce93d8" opacity="0.62">涂抹</text>
+<text x="242" y="142" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#ce93d8" opacity="0.58">发酵</text>
+<text x="55" y="142" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#ce93d8" opacity="0.58">嘭弹</text>
+<text x="200" y="215" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e1bee7" opacity="0.56">小分子</text>
+<text x="95" y="218" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e1bee7" opacity="0.54">弹力</text>
+<text x="248" y="92" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.5">清爽</text>
+<text x="50" y="88" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.5">超低分子</text>
+<text x="242" y="200" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.48">加强版</text>
+<text x="55" y="202" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.48">不刺激</text>
+<text x="150" y="242" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="400" fill="#f3e5f5" opacity="0.46">奢润</text>
+<text x="112" y="48" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.44">科技</text>
+<text x="192" y="48" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.44">速修</text>
+</svg>
+    </div>
+  </div>
+  </div>
+  <div class="face-wc-panel" data-cat="面部精华/精油" style="display:none">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;text-align:center">
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--primary);margin-bottom:12px;border-bottom:2px solid var(--primary);padding-bottom:6px;display:inline-block">成分</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp9" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#1a73e8" stop-opacity="0.08"/><stop offset="100%" stop-color="#1a73e8" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp9)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#1a73e8" opacity="0.92">鎏金</text>
+<text x="150" y="100" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#1a73e8" opacity="0.85">铂金</text>
+<text x="205" y="122" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#1a73e8" opacity="0.82">植物</text>
+<text x="88" y="112" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#4a90d9" opacity="0.78">金箔</text>
+<text x="95" y="172" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#4a90d9" opacity="0.78">纯原料</text>
+<text x="208" y="170" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#5c9aff" opacity="0.73">翡翠</text>
+<text x="198" y="78" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#5c9aff" opacity="0.66">黄金</text>
+<text x="98" y="72" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#7ab3ff" opacity="0.65">素皮</text>
+<text x="238" y="138" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#7ab3ff" opacity="0.6">冰种</text>
+<text x="232" y="200" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#7ab3ff" opacity="0.58">红纹石</text>
+<text x="175" y="215" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#7ab3ff" opacity="0.58">金钻</text>
+<text x="110" y="218" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#a0c4ff" opacity="0.55">老山檀</text>
+<text x="62" y="200" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#a0c4ff" opacity="0.55">冻干球套</text>
+<text x="58" y="148" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#a0c4ff" opacity="0.52">银胶</text>
+<text x="60" y="92" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#b3d4ff" opacity="0.48">奢金</text>
+<text x="152" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#b3d4ff" opacity="0.48">24K金</text>
+<text x="258" y="140" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#b3d4ff" opacity="0.46">油</text>
+<text x="128" y="240" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#c6e0ff" opacity="0.44">翡冷翠</text>
+<text x="182" y="242" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#c6e0ff" opacity="0.44">骨瓷</text>
+<text x="72" y="52" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#c6e0ff" opacity="0.42">微珠</text>
+</svg>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--red);margin-bottom:12px;border-bottom:2px solid var(--red);padding-bottom:6px;display:inline-block">卖点</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp10" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e74c3c" stop-opacity="0.08"/><stop offset="100%" stop-color="#e74c3c" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp10)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="800" fill="#e74c3c" opacity="0.92">抗皱</text>
+<text x="150" y="102" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#e74c3c" opacity="0.84">紧致</text>
+<text x="210" y="120" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ff6d01" opacity="0.74">美白</text>
+<text x="82" y="118" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#ff6d01" opacity="0.72">保湿</text>
+<text x="150" y="182" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#f39c12" opacity="0.7">修护</text>
+<text x="208" y="168" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#f39c12" opacity="0.66">祛斑</text>
+<text x="88" y="172" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#f39c12" opacity="0.64">舒缓</text>
+<text x="205" y="82" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#f39c12" opacity="0.64">淡纹</text>
+<text x="90" y="80" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#e67e22" opacity="0.62">补水</text>
+<text x="240" y="142" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#e67e22" opacity="0.6">淡斑</text>
+<text x="55" y="90" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e67e22" opacity="0.58">提亮</text>
+<text x="58" y="198" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e67e22" opacity="0.56">焕颜</text>
+<text x="228" y="198" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#f5b041" opacity="0.55">以油养肤</text>
+<text x="168" y="218" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="400" fill="#f5b041" opacity="0.52">水光</text>
+<text x="170" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f5b041" opacity="0.5">滋润</text>
+<text x="252" y="92" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.48">提亮肤色</text>
+<text x="48" y="142" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.48">焕亮</text>
+<text x="108" y="238" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.46">提拉</text>
+<text x="200" y="238" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f8c471" opacity="0.46">赋活</text>
+<text x="62" y="225" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#fad7a0" opacity="0.44">滋养</text>
+</svg>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--purple);margin-bottom:12px;border-bottom:2px solid var(--purple);padding-bottom:6px;display:inline-block">肌肤问题</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+<defs><radialGradient id="sp11" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#9c27b0" stop-opacity="0.08"/><stop offset="100%" stop-color="#9c27b0" stop-opacity="0"/></radialGradient></defs>
+<circle cx="150" cy="140" r="115" fill="url(#sp11)" class="non-drill-bubble"/>
+<text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#9c27b0" opacity="0.92">温和</text>
+<text x="150" y="100" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#9c27b0" opacity="0.84">冻干</text>
+<text x="210" y="125" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#ab47bc" opacity="0.82">次抛</text>
+<text x="85" y="110" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="#ab47bc" opacity="0.76">浓缩</text>
+<text x="208" y="170" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ba68c8" opacity="0.72">无水</text>
+<text x="88" y="172" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ba68c8" opacity="0.7">嘭弹</text>
+<text x="150" y="180" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="600" fill="#ba68c8" opacity="0.68">高浓度</text>
+<text x="205" y="80" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#ce93d8" opacity="0.62">超高浓度</text>
+<text x="92" y="78" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#ce93d8" opacity="0.62">弹</text>
+<text x="242" y="142" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#ce93d8" opacity="0.58">清爽</text>
+<text x="55" y="142" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#ce93d8" opacity="0.58">闪充</text>
+<text x="200" y="215" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e1bee7" opacity="0.56">固态</text>
+<text x="95" y="218" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#e1bee7" opacity="0.54">清透</text>
+<text x="248" y="92" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.5">轻薄</text>
+<text x="50" y="88" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.5">升级版</text>
+<text x="242" y="200" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.48">轻盈</text>
+<text x="55" y="202" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.48">易吸收</text>
+<text x="150" y="242" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="400" fill="#f3e5f5" opacity="0.46">好吸收</text>
+<text x="112" y="48" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.44">不油腻</text>
+<text x="192" y="48" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f3e5f5" opacity="0.44">高效</text>
+</svg>
+    </div>
+  </div>
+  </div>
+</div>
+<!-- 3.3 香水彩妆深度分析 -->
+<h3 class="sub-title">2.3 香水彩妆细分品类分析</h3>
+
+<!-- 香水彩妆 子品类散点图（规模·增速·销量） -->
+<div class="chart-box" style="padding:24px;margin-bottom:16px">
+  <div class="chart-title" style="margin-bottom:4px">2.2 香水彩妆 · 子品类规模-增速矩阵</div>
+<svg viewBox="0 0 1180 520" font-family="inherit">
+<defs>
+<linearGradient id="pfg" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#34a853" stop-opacity="0.78"/>
+  <stop offset="100%" stop-color="#34a853" stop-opacity="0.38"/>
+</linearGradient>
+<linearGradient id="pfb" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#1a73e8" stop-opacity="0.7"/>
+  <stop offset="100%" stop-color="#1a73e8" stop-opacity="0.3"/>
+</linearGradient>
+<linearGradient id="pfr" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#ff6d01" stop-opacity="0.85"/>
+  <stop offset="100%" stop-color="#ff6d01" stop-opacity="0.4"/>
+</linearGradient>
+</defs>
+<g stroke="#e9ecef" stroke-width="1">
+<line x1="130" y1="130" x2="130" y2="400"/>
+<line x1="130" y1="400" x2="1130" y2="400"/>
+</g>
+<g stroke="#eef1f4" stroke-width="1">
+<line x1="130" y1="378.7" x2="1130" y2="378.7" stroke-dasharray="4,4"/>
+<line x1="130" y1="343.2" x2="1130" y2="343.2" stroke-dasharray="4,4"/>
+<line x1="130" y1="307.6" x2="1130" y2="307.6"/>
+<line x1="130" y1="272.1" x2="1130" y2="272.1" stroke-dasharray="4,4"/>
+<line x1="130" y1="236.6" x2="1130" y2="236.6" stroke-dasharray="4,4"/>
+<line x1="130" y1="201.1" x2="1130" y2="201.1" stroke-dasharray="4,4"/>
+<line x1="130" y1="165.5" x2="1130" y2="165.5" stroke-dasharray="4,4"/>
+<line x1="130" y1="130.0" x2="1130" y2="130.0" stroke-dasharray="4,4"/>
+</g>
+<line x1="130" y1="307.6" x2="1130" y2="307.6" stroke="#adb5bd" stroke-width="1.5" stroke-dasharray="6,3"/>
+<text x="1134" y="304.6" font-size="9" fill="#adb5bd" font-style="italic">0%线</text>
+<g fill="#5a6872" font-size="10" text-anchor="end">
+<text x="124" y="381.7">-50%</text>
+<text x="124" y="346.2">-25%</text>
+<text x="124" y="310.6">0%</text>
+<text x="124" y="275.1">+25%</text>
+<text x="124" y="239.6">+50%</text>
+<text x="124" y="204.1">+75%</text>
+<text x="124" y="168.5">+100%</text>
+<text x="124" y="133.0">+125%</text>
+</g>
+<g fill="#5a6872" font-size="9" text-anchor="middle">
+</g>
+<g>
+<circle cx="1130.0" cy="291.3" r="32.8" fill="url(#pfr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="1130.0" y="289.3" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">素颜霜</text>
+<text x="1130.0" y="302.3" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+11%</text>
+<circle cx="1086.5" cy="289.4" r="33.7" fill="url(#pfr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="1086.5" y="287.4" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">口红</text>
+<text x="1086.5" y="300.4" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+13%</text>
+<circle cx="1043.0" cy="288.4" r="30.7" fill="url(#pfr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="1043.0" y="286.4" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">气垫BB/BB霜</text>
+<text x="1043.0" y="299.4" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+14%</text>
+<circle cx="999.6" cy="319.4" r="33.5" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="999.6" y="317.4" text-anchor="middle" font-size="9" font-weight="700" fill="#0d47a1">粉底液/粉底膏/粉底霜</text>
+<text x="999.6" y="330.4" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-8%</text>
+<circle cx="956.1" cy="146.0" r="25.1" fill="url(#pfg)" stroke="#34a853" stroke-width="1.4" opacity="0.8"/>
+<text x="956.1" y="144.0" text-anchor="middle" font-size="9" font-weight="700" fill="#1e7e34">气垫CC/CC霜</text>
+<text x="956.1" y="157.0" text-anchor="middle" font-size="10" font-weight="600" fill="#1e7e34">+114%</text>
+<circle cx="912.6" cy="246.8" r="40.0" fill="url(#pfr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="912.6" y="244.8" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">香水/香膏</text>
+<text x="912.6" y="257.8" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+43%</text>
+<circle cx="869.1" cy="344.4" r="28.5" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="869.1" y="342.4" text-anchor="middle" font-size="9" font-weight="700" fill="#0d47a1">隔离霜/妆前乳</text>
+<text x="869.1" y="355.4" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-26%</text>
+<circle cx="825.7" cy="337.5" r="32.6" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="825.7" y="335.5" text-anchor="middle" font-size="9" font-weight="700" fill="#0d47a1">唇彩唇蜜/唇釉</text>
+<text x="825.7" y="348.5" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-21%</text>
+<circle cx="782.2" cy="301.2" r="27.6" fill="url(#pfr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="782.2" y="299.2" text-anchor="middle" font-size="11" font-weight="700" fill="#c2410c">粉饼</text>
+<text x="782.2" y="312.2" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+5%</text>
+<circle cx="738.7" cy="341.4" r="27.4" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="738.7" y="339.4" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">彩妆套装</text>
+<text x="738.7" y="352.4" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-24%</text>
+<circle cx="695.2" cy="258.6" r="26.4" fill="url(#pfr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="695.2" y="256.6" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">蜜粉/散粉</text>
+<text x="695.2" y="269.6" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+35%</text>
+<circle cx="651.7" cy="264.5" r="25.3" fill="url(#pfr)" stroke="#ff6d01" stroke-width="1.4" opacity="0.8"/>
+<text x="651.7" y="262.5" text-anchor="middle" font-size="9" font-weight="700" fill="#c2410c">遮瑕膏/遮瑕笔</text>
+<text x="651.7" y="275.5" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">+30%</text>
+<circle cx="608.3" cy="323.8" r="28.3" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="608.3" y="321.8" text-anchor="middle" font-size="9" font-weight="700" fill="#0d47a1">眉笔/眉粉/染眉膏</text>
+<text x="608.3" y="334.8" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-11%</text>
+<circle cx="564.8" cy="325.6" r="23.6" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="564.8" y="323.6" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">美甲产品</text>
+<text x="564.8" y="336.6" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-13%</text>
+<circle cx="521.3" cy="349.3" r="24.5" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="521.3" y="347.3" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">定妆喷雾</text>
+<text x="521.3" y="360.3" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-29%</text>
+<circle cx="477.8" cy="235.1" r="24.9" fill="url(#pfg)" stroke="#34a853" stroke-width="1.4" opacity="0.8"/>
+<text x="477.8" y="233.1" text-anchor="middle" font-size="9" font-weight="700" fill="#1e7e34">睫毛膏/增长液</text>
+<text x="477.8" y="246.1" text-anchor="middle" font-size="10" font-weight="600" fill="#1e7e34">+51%</text>
+<circle cx="434.3" cy="348.5" r="26.1" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="434.3" y="346.5" text-anchor="middle" font-size="9" font-weight="700" fill="#0d47a1">腮红/胭脂</text>
+<text x="434.3" y="359.5" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-29%</text>
+<circle cx="390.9" cy="332.3" r="23.7" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="390.9" y="330.3" text-anchor="middle" font-size="9" font-weight="700" fill="#0d47a1">修容/阴影</text>
+<text x="390.9" y="343.3" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-17%</text>
+<circle cx="347.4" cy="321.9" r="26.7" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="347.4" y="319.9" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">眼影</text>
+<text x="347.4" y="332.9" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-10%</text>
+<circle cx="303.9" cy="328.4" r="26.6" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="303.9" y="326.4" text-anchor="middle" font-size="9" font-weight="700" fill="#0d47a1">眼线笔/眼线膏</text>
+<text x="303.9" y="339.4" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-15%</text>
+<circle cx="260.4" cy="320.7" r="22.1" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="260.4" y="318.7" text-anchor="middle" font-size="9" font-weight="700" fill="#0d47a1">唇笔/唇线笔</text>
+<text x="260.4" y="331.7" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-9%</text>
+<circle cx="217.0" cy="386.1" r="22.9" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="217.0" y="384.1" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">高光</text>
+<text x="217.0" y="397.1" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-55%</text>
+<circle cx="173.5" cy="388.1" r="18.0" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="173.5" y="386.1" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">眉毛雨衣</text>
+<text x="173.5" y="399.1" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-57%</text>
+<circle cx="130.0" cy="364.0" r="18.6" fill="url(#pfb)" stroke="#1a73e8" stroke-width="1.4" opacity="0.8"/>
+<text x="130.0" y="362.0" text-anchor="middle" font-size="11" font-weight="700" fill="#0d47a1">其它彩妆</text>
+<text x="130.0" y="375.0" text-anchor="middle" font-size="10" font-weight="600" fill="#0d47a1">-40%</text>
+</g>
+<text x="630.0" y="512" text-anchor="middle" font-size="12" fill="#495057" font-weight="600">销售规模（按排名）</text>
+<text x="20" y="265.0" text-anchor="middle" font-size="12" fill="#495057" font-weight="600" transform="rotate(-90,20,265.0)">环比增速（%）</text>
+<g transform="translate(140,476)">
+<rect x="-6" y="-12" width="240" height="22" rx="4" fill="#f8f9fa" stroke="#e9ecef" stroke-width="0.5"/>
+<circle cx="0" cy="-1" r="5" fill="#1a73e8" opacity="0.85" stroke="#1a73e8" stroke-width="1"/>
+<text x="8" y="2" font-size="10" fill="#495057" font-weight="500">跌</text>
+<circle cx="50" cy="-1" r="5" fill="#ff6d01" opacity="0.85" stroke="#ff6d01" stroke-width="1"/>
+<text x="58" y="2" font-size="10" fill="#495057" font-weight="500">涨一般 &lt;50%</text>
+<circle cx="155" cy="-1" r="5" fill="#34a853" opacity="0.85" stroke="#34a853" stroke-width="1"/>
+<text x="163" y="2" font-size="10" fill="#495057" font-weight="500">涨很好 ≥50%</text>
+</g>
+</svg>
+</div>
+
+
+
+<!-- 香水彩妆 属性值词云：功能(产品功能)·需求人群(适用人群)·改善(痛点) -->
+<div class="chart-box" style="padding:24px;margin-bottom:16px">
+  <div class="chart-title" style="margin-bottom:16px">香水彩妆 · 属性值词云</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;text-align:center">
+    <!-- 功能词云（数据源：产品功能XLS 260617114504）— 密集圆形分布 -->
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--primary);margin-bottom:12px;border-bottom:2px solid var(--primary);padding-bottom:6px;display:inline-block">需 求</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+        <defs><radialGradient id="cg4" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#1a73e8" stop-opacity="0.08"/><stop offset="100%" stop-color="#1a73e8" stop-opacity="0"/></radialGradient></defs>
+        <circle cx="150" cy="140" r="115" fill="url(#cg4)" class="non-drill-bubble"/>
+        <!-- 隐形毛孔 38.63% -->
+        <text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#1a73e8" opacity="0.92">隐形毛孔</text>
+        <!-- 不卡粉 17.38% -->
+        <text x="150" y="95" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#1a73e8" opacity="0.85">不卡粉</text>
+        <!-- 自动 17.29% -->
+        <text x="189" y="118" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#1a73e8" opacity="0.85">自动</text>
+        <!-- 画眼线下睫毛 5.91% -->
+        <text x="189" y="162" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#4a90d9" opacity="0.76">画眼线下睫毛</text>
+        <!-- 妆感 2.80% -->
+        <text x="150" y="185" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="600" fill="#4a90d9" opacity="0.76">妆感</text>
+        <!-- 无需卸妆 2.54% -->
+        <text x="111" y="162" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="600" fill="#4a90d9" opacity="0.76">无需卸妆</text>
+        <!-- 快速上妆 2.53% -->
+        <text x="111" y="118" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="600" fill="#5c9aff" opacity="0.66">快速上妆</text>
+        <!-- 防卡粉 1.83% -->
+        <text x="180" y="68" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="600" fill="#5c9aff" opacity="0.66">防卡粉</text>
+        <!-- 氛围提升 1.69% -->
+        <text x="222" y="110" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="600" fill="#5c9aff" opacity="0.66">氛围提升</text>
+        <!-- 高效遮瑕 1.30% -->
+        <text x="222" y="170" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="600" fill="#5c9aff" opacity="0.66">高效遮瑕</text>
+        <!-- 眼影 1.28% -->
+        <text x="180" y="212" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="500" fill="#7ab3ff" opacity="0.56">眼影</text>
+        <!-- 缓解 1.01% -->
+        <text x="120" y="212" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="500" fill="#7ab3ff" opacity="0.56">缓解</text>
+        <!-- 脸部遮盖斑点 0.94% -->
+        <text x="78" y="170" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="500" fill="#7ab3ff" opacity="0.56">脸部遮盖斑点</text>
+        <!-- 氛围 0.93% -->
+        <text x="78" y="110" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="500" fill="#7ab3ff" opacity="0.56">氛围</text>
+        <!-- 唇部滋润 0.84% -->
+        <text x="120" y="68" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="500" fill="#7ab3ff" opacity="0.56">唇部滋润</text>
+        <!-- 懒人速妆神器 0.80% -->
+        <text x="212" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#a0c4ff" opacity="0.46">懒人速妆神器</text>
+        <!-- 无痛嘟嘟唇 0.71% -->
+        <text x="250" y="172" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#a0c4ff" opacity="0.46">无痛嘟嘟唇</text>
+        <!-- 活性锁鲜 0.70% -->
+        <text x="150" y="245" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#a0c4ff" opacity="0.46">活性锁鲜</text>
+        <!-- 无暇光感 0.47% -->
+        <text x="50" y="172" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#a0c4ff" opacity="0.46">无暇光感</text>
+        <!-- 焕采紧致 0.42% -->
+        <text x="88" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#a0c4ff" opacity="0.46">焕采紧致</text>
+      </svg>
+    </div>
+    <!-- 需求人群词云（数据源：适用人群XLS 260617114548）— 密集圆形分布 -->
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--red);margin-bottom:12px;border-bottom:2px solid var(--red);padding-bottom:6px;display:inline-block">人 群</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+        <defs><radialGradient id="cg5" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e74c3c" stop-opacity="0.08"/><stop offset="100%" stop-color="#e74c3c" stop-opacity="0"/></radialGradient></defs>
+        <circle cx="150" cy="140" r="115" fill="url(#cg5)" class="non-drill-bubble"/>
+        <!-- 新手 46.85% -->
+        <text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#e74c3c" opacity="0.92">新手</text>
+        <!-- 油皮 18.78% -->
+        <text x="150" y="95" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="700" fill="#e74c3c" opacity="0.85">油皮</text>
+        <!-- 黄黑皮 7.58% -->
+        <text x="189" y="118" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="700" fill="#e74c3c" opacity="0.85">黄黑皮</text>
+        <!-- 混干油皮 7.48% -->
+        <text x="189" y="162" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#ff6d01" opacity="0.76">混干油皮</text>
+        <!-- 女香 3.11% -->
+        <text x="150" y="185" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="600" fill="#ff6d01" opacity="0.76">女香</text>
+        <!-- 送老婆 2.21% -->
+        <text x="111" y="162" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="600" fill="#ff6d01" opacity="0.76">送老婆</text>
+        <!-- 新手必备 2.00% -->
+        <text x="111" y="118" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="600" fill="#f39c12" opacity="0.66">新手必备</text>
+        <!-- 化妆老师专属 1.81% -->
+        <text x="180" y="68" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="600" fill="#f39c12" opacity="0.66">化妆老师专属</text>
+        <!-- 孕妇 1.70% -->
+        <text x="222" y="110" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="600" fill="#f39c12" opacity="0.66">孕妇</text>
+        <!-- 准妈妈 1.59% -->
+        <text x="222" y="170" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="600" fill="#f39c12" opacity="0.66">准妈妈</text>
+        <!-- 孕期 1.57% -->
+        <text x="180" y="212" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="500" fill="#e67e22" opacity="0.56">孕期</text>
+        <!-- 新手小白 1.22% -->
+        <text x="120" y="212" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="500" fill="#e67e22" opacity="0.56">新手小白</text>
+        <!-- 男香氛 1.15% -->
+        <text x="78" y="170" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="500" fill="#e67e22" opacity="0.56">男香氛</text>
+        <!-- 妈生 0.68% -->
+        <text x="78" y="110" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="500" fill="#e67e22" opacity="0.56">妈生</text>
+        <!-- 女性 0.61% -->
+        <text x="120" y="68" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="500" fill="#e67e22" opacity="0.56">女性</text>
+        <!-- 双唇 0.47% -->
+        <text x="212" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f5b041" opacity="0.46">双唇</text>
+        <!-- 老师专属 0.44% -->
+        <text x="250" y="172" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f5b041" opacity="0.46">老师专属</text>
+        <!-- 新手专用 0.35% -->
+        <text x="150" y="245" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f5b041" opacity="0.46">新手专用</text>
+        <!-- 懒人粉底 0.27% -->
+        <text x="50" y="172" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f5b041" opacity="0.46">懒人粉底</text>
+        <!-- 妆造师 0.12% -->
+        <text x="88" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#f5b041" opacity="0.46">妆造师</text>
+      </svg>
+    </div>
+    <!-- 改善词云（数据源：痛点XLS 260617114603）— 密集圆形分布 -->
+    <div>
+      <div style="font-size:13px;font-weight:600;color:var(--purple);margin-bottom:12px;border-bottom:2px solid var(--purple);padding-bottom:6px;display:inline-block">痛 点</div>
+      <svg viewBox="0 0 300 280" style="width:100%;height:auto" font-family="inherit">
+        <defs><radialGradient id="cg6" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#9c27b0" stop-opacity="0.08"/><stop offset="100%" stop-color="#9c27b0" stop-opacity="0"/></radialGradient></defs>
+        <circle cx="150" cy="140" r="115" fill="url(#cg6)" class="non-drill-bubble"/>
+        <!-- 凹陷 18.60% -->
+        <text x="150" y="140" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="800" fill="#9c27b0" opacity="0.92">凹陷</text>
+        <!-- 黑眼圈 15.63% -->
+        <text x="150" y="95" text-anchor="middle" dominant-baseline="central" font-size="20" font-weight="700" fill="#9c27b0" opacity="0.85">黑眼圈</text>
+        <!-- 法令纹 14.85% -->
+        <text x="189" y="118" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="700" fill="#9c27b0" opacity="0.85">法令纹</text>
+        <!-- 斑点 13.76% -->
+        <text x="189" y="162" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="600" fill="#ab47bc" opacity="0.76">斑点</text>
+        <!-- 淡唇纹 7.04% -->
+        <text x="150" y="185" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#ab47bc" opacity="0.76">淡唇纹</text>
+        <!-- 泪沟 7.01% -->
+        <text x="111" y="162" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#ab47bc" opacity="0.76">泪沟</text>
+        <!-- 敏感肌 5.63% -->
+        <text x="111" y="118" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ba68c8" opacity="0.66">敏感肌</text>
+        <!-- 不卡粉 4.48% -->
+        <text x="180" y="68" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#ba68c8" opacity="0.66">不卡粉</text>
+        <!-- 卡粉 2.70% -->
+        <text x="222" y="110" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#ba68c8" opacity="0.66">卡粉</text>
+        <!-- 面部凹陷 2.14% -->
+        <text x="222" y="170" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="600" fill="#ba68c8" opacity="0.66">面部凹陷</text>
+        <!-- 暗沉 2.00% -->
+        <text x="180" y="212" text-anchor="middle" dominant-baseline="central" font-size="9" font-weight="500" fill="#ce93d8" opacity="0.56">暗沉</text>
+        <!-- 不易卡粉 1.55% -->
+        <text x="120" y="212" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#ce93d8" opacity="0.56">不易卡粉</text>
+        <!-- 干皮 1.25% -->
+        <text x="78" y="170" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#ce93d8" opacity="0.56">干皮</text>
+        <!-- 油皮 1.16% -->
+        <text x="78" y="110" text-anchor="middle" dominant-baseline="central" font-size="8" font-weight="500" fill="#ce93d8" opacity="0.56">油皮</text>
+        <!-- 起皮 0.69% -->
+        <text x="120" y="68" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="500" fill="#ce93d8" opacity="0.56">起皮</text>
+        <!-- 不易晕妆 0.54% -->
+        <text x="212" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.46">不易晕妆</text>
+        <!-- 不拔干 0.33% -->
+        <text x="250" y="172" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.46">不拔干</text>
+        <!-- 红痘印 0.31% -->
+        <text x="150" y="245" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.46">红痘印</text>
+        <!-- 不新手 0.19% -->
+        <text x="50" y="172" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.46">不新手</text>
+        <!-- 流汗 0.14% -->
+        <text x="88" y="55" text-anchor="middle" dominant-baseline="central" font-size="7" font-weight="400" fill="#e1bee7" opacity="0.46">流汗</text>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- 3.4 双品类洞察 -->
+<div class="insight-box">
+  <h4>美妆护肤细分品类趋势洞察</h4>
+  <ul>
+    <li><strong>面部护肤规模规模倍数（脱敏）</strong>，直播销售额（脱敏） vs （脱敏），面部护肤客单价（脱敏）显著高于香水彩妆（~76元），体现高附加值品类特征</li>
+    <li><strong>防晒、喷雾为面部护肤最强增长极</strong>：防晒环比+323%、喷雾+240%，季节性入夏需求暴增；面膜逆势增长+15%，销量占比达17.2%为走量担当</li>
+    <li><strong>香水彩妆底妆类逆势崛起</strong>：气垫BB/BB霜+45%、蜜粉/散粉+93%、粉饼+75%、遮瑕+70%，底妆品类集体走强；美甲产品环比+445%异军突起</li>
+    <li><strong>品牌集中度差异显著</strong>：香水彩妆品牌店占75.4%销售额（国际大牌主导），面部护肤品牌店仅占54.4%（国货竞争更激烈）</li>
+    <li><strong>香水彩妆轻奢定位占绝对主导</strong>（55.99%），奢华/高奢增速分别+68%/+45%，消费升级趋势明显；平价占比下滑-13%</li>
+    <li><strong>面部护肤"青少年专用"人群增速+290%</strong>，Z世代护肤需求觉醒；"男女通用"占比超59%，泛人群化趋势突出</li>
+  </ul>
+</div>
+</div>
+
+<!-- ===== 三、品牌竞争格局 ===== -->
+<div class="section">
+<div class="section-title">三、品牌竞争格局（6月数据）</div>
+<div class="section-desc">美妆护肤品类 6 月品牌销售榜：面部护肤 & 香水彩妆 TOP10</div>
+
+
+<div class="yt-top10">
+<div class="cat-grid">
+    
+    <div class="cat-card">
+      <div class="cat-header">
+        <span class="cat-tag">面部护肤</span>
+        <span class="cat-meta">TOP 10 品牌 · 6月月榜</span>
+      </div>
+      <table class="brand-table">
+        <thead>
+          <tr>
+            <th class="rank-th">排名</th>
+            <th class="brand-th">品牌</th>
+            <th class="num-th">市占率</th>
+            <th class="num-th">自播占比</th>
+            <th class="num-th">达播占比</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="rank-cell">01</td>
+          <td class="brand-cell">
+            <div class="brand-main">谷雨</div>
+          </td>
+          <td class="num-cell">15.0%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 89.4%"></div>
+              <span class="bar-label">89.4%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 10.6%"></div>
+              <span class="bar-label">10.6%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">02</td>
+          <td class="brand-cell">
+            <div class="brand-main">郑明明</div>
+          </td>
+          <td class="num-cell">7.4%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 99.5%"></div>
+              <span class="bar-label">99.5%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 0.5%"></div>
+              <span class="bar-label">0.5%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">03</td>
+          <td class="brand-cell">
+            <div class="brand-main">肌肤之研</div>
+          </td>
+          <td class="num-cell">5.1%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 2.2%"></div>
+              <span class="bar-label">2.2%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 97.8%"></div>
+              <span class="bar-label">97.8%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">04</td>
+          <td class="brand-cell">
+            <div class="brand-main">必扬</div>
+          </td>
+          <td class="num-cell">4.3%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 69.4%"></div>
+              <span class="bar-label">69.4%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 30.6%"></div>
+              <span class="bar-label">30.6%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">05</td>
+          <td class="brand-cell">
+            <div class="brand-main">韩束</div>
+          </td>
+          <td class="num-cell">4.3%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 97.5%"></div>
+              <span class="bar-label">97.5%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 2.5%"></div>
+              <span class="bar-label">2.5%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">06</td>
+          <td class="brand-cell">
+            <div class="brand-main">自然堂</div>
+          </td>
+          <td class="num-cell">3.3%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 83.8%"></div>
+              <span class="bar-label">83.8%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 16.2%"></div>
+              <span class="bar-label">16.2%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">07</td>
+          <td class="brand-cell">
+            <div class="brand-main">林清轩</div>
+          </td>
+          <td class="num-cell">2.9%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 43.1%"></div>
+              <span class="bar-label">43.1%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 56.9%"></div>
+              <span class="bar-label">56.9%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">08</td>
+          <td class="brand-cell">
+            <div class="brand-main">黛莱皙</div>
+          </td>
+          <td class="num-cell">2.9%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 96.4%"></div>
+              <span class="bar-label">96.4%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 3.6%"></div>
+              <span class="bar-label">3.6%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">09</td>
+          <td class="brand-cell">
+            <div class="brand-main">MARUBI/Marubi</div>
+          </td>
+          <td class="num-cell">2.7%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 79.8%"></div>
+              <span class="bar-label">79.8%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 20.2%"></div>
+              <span class="bar-label">20.2%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">10</td>
+          <td class="brand-cell">
+            <div class="brand-main">WIS/WIS-Men</div>
+          </td>
+          <td class="num-cell">2.0%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 80.8%"></div>
+              <span class="bar-label">80.8%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 19.2%"></div>
+              <span class="bar-label">19.2%</span>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="cat-card">
+      <div class="cat-header">
+        <span class="cat-tag">香水彩妆</span>
+        <span class="cat-meta">TOP 10 品牌 · 6月月榜</span>
+      </div>
+      <table class="brand-table">
+        <thead>
+          <tr>
+            <th class="rank-th">排名</th>
+            <th class="brand-th">品牌</th>
+            <th class="num-th">市占率</th>
+            <th class="num-th">自播占比</th>
+            <th class="num-th">达播占比</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="rank-cell">01</td>
+          <td class="brand-cell">
+            <div class="brand-main">DPDP</div>
+          </td>
+          <td class="num-cell">18.3%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 92.1%"></div>
+              <span class="bar-label">92.1%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 7.9%"></div>
+              <span class="bar-label">7.9%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">02</td>
+          <td class="brand-cell">
+            <div class="brand-main">完美日记</div>
+          </td>
+          <td class="num-cell">13.1%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 78.6%"></div>
+              <span class="bar-label">78.6%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 21.4%"></div>
+              <span class="bar-label">21.4%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">03</td>
+          <td class="brand-cell">
+            <div class="brand-main">卡姿兰</div>
+          </td>
+          <td class="num-cell">5.6%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 99.9%"></div>
+              <span class="bar-label">99.9%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 0.1%"></div>
+              <span class="bar-label">0.1%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">04</td>
+          <td class="brand-cell">
+            <div class="brand-main">VC美妆</div>
+          </td>
+          <td class="num-cell">5.1%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 92.7%"></div>
+              <span class="bar-label">92.7%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 7.3%"></div>
+              <span class="bar-label">7.3%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">05</td>
+          <td class="brand-cell">
+            <div class="brand-main">ELBAONO</div>
+          </td>
+          <td class="num-cell">5.0%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 0.0%"></div>
+              <span class="bar-label">0.0%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 100.0%"></div>
+              <span class="bar-label">100.0%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">06</td>
+          <td class="brand-cell">
+            <div class="brand-main">三资堂</div>
+          </td>
+          <td class="num-cell">4.4%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 99.0%"></div>
+              <span class="bar-label">99.0%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 1.0%"></div>
+              <span class="bar-label">1.0%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">07</td>
+          <td class="brand-cell">
+            <div class="brand-main">蒂洛薇</div>
+          </td>
+          <td class="num-cell">4.0%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 90.4%"></div>
+              <span class="bar-label">90.4%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 9.6%"></div>
+              <span class="bar-label">9.6%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">08</td>
+          <td class="brand-cell">
+            <div class="brand-main">百雀羚</div>
+          </td>
+          <td class="num-cell">2.3%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 0.0%"></div>
+              <span class="bar-label">—</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 100.0%"></div>
+              <span class="bar-label">100.0%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">09</td>
+          <td class="brand-cell">
+            <div class="brand-main">滋色</div>
+          </td>
+          <td class="num-cell">1.9%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 100.0%"></div>
+              <span class="bar-label">100.0%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 0.0%"></div>
+              <span class="bar-label">0.0%</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rank-cell">10</td>
+          <td class="brand-cell">
+            <div class="brand-main">FLOWER KNOWS</div>
+          </td>
+          <td class="num-cell">1.7%</td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar self" style="width: 90.3%"></div>
+              <span class="bar-label">90.3%</span>
+            </div>
+          </td>
+          <td class="num-cell">
+            <div class="bar-wrap">
+              <div class="bar dist" style="width: 9.7%"></div>
+              <span class="bar-label">9.7%</span>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
